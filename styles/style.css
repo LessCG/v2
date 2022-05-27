@@ -1,0 +1,229 @@
+*{
+    transition: all 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+#body{
+    background-image: linear-gradient(to right, #c73237, #ffc371);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quiz{
+    border-radius: 10px;
+    background: #ffffff;
+    width: 60rem;
+    height: 34rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 20px;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+#title{
+    margin: 10px;
+    font-size: 30px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 22.5rem;
+}
+
+
+#question{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c2c2c;
+    text-align: justify;
+}
+
+#progress {
+    color: #2c2c2c;
+    font-size: 18px;
+    width: auto;
+}
+
+#navegationButtonsContainer{
+    margin: 0px;
+}
+
+.navegationButtons{
+    margin-top: 0px;
+    padding: 10px;
+    margin: 0px;
+    background: none;
+    border: none;
+}
+
+.navegationButtons:hover{
+    cursor: pointer;
+    border: 10px 0 10px 0;
+}
+
+.navegationButtonsImage{
+    width: 25px;
+}
+
+#buttonForward{
+    float: right;
+    padding: 150px 10px 0px 40px;
+}
+
+#buttonBack{
+    float: left;
+    padding: 150px 40px 0px 10px;
+}
+
+#actionButtonsContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.actionButtons{
+    background: #e9e9e9;
+    color: rgb(0, 0, 0);
+    border-color: #e9e9e9;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+}
+
+.actionButtons:hover{
+    cursor: pointer;
+    border: 10px 0 10px 0;
+    background-color: #bcbcbc;
+}
+
+#questionLabel{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    width: fit-content;
+}
+
+#buttonSave{
+    float: right;
+    padding: 6px 12px 6px 12px;
+    margin: 0px 10px 0px 10px;
+}
+
+#buttonSend{
+    float: right;
+    padding: 6px 12px 6px 12px;
+    margin: 0px 10px 0px 10px;
+}
+
+#labelSavedAnswer{
+    margin-left: auto;
+    font-size: 15px;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    align-items: center;
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0px 20px 10px 0px;
+    border-radius: 50%;
+    border: 1.5px solid #bcbcbc;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 27% 0% 0% 27%;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+    background: #5b5b5b;
+
+}
+
+input[type="radio"]:checked {
+  border-color: #5b5b5b;
+}
+
+#newline{
+    width: -webkit-fill-available;
+}
+/* Standard Template*/
+#standardContainer, #listeningContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 23rem;
+    width: -webkit-fill-available;
+}
+
+/* Reading Template */
+#readingContainer{
+    display: flex;
+    height: 20rem;
+    width: -webkit-fill-available;
+}
+
+#readingQuestionsContainer{
+    width: -webkit-fill-available;
+    height: 21rem;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+#lectureContainer{
+    width: -webkit-fill-available;
+    height: 21rem;
+    overflow-y: scroll;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 25px 5px 25px;
+    
+}
+
+.singleQuestionContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 20px 10px;
+}
+
+#lectureTitle{
+    text-align: left;
+    font-weight: bold;
+}
+
+#lectureParagraph{
+    text-align: left;
+}
+
+/* Listening Template */
+
+#timer{
+    position: sticky;
+    margin: 10px;
+}
+
+#listeningQuestionsContainer{
+    overflow-y: scroll;
+}
